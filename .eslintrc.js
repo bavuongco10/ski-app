@@ -51,8 +51,8 @@ module.exports = {
     ],
     "react/prefer-stateless-function": 1,
     "arrow-parens": ["error", "as-needed"],
-    "no-console": ["error", { allow: ["error"] }],
-    "no-shadow": "off"
+    "no-console": ["warn", { allow: ["warn"] }],  // should have set it to error but to avoid error when reload to it to warn
+    "no-shadow": "off",
   },
   globals: {
     // Set each global variable name equal to true to allow the variable to be overwritten

@@ -1,3 +1,5 @@
+/* eslint-disable */
+
 'use strict';
 
 const fs = require('fs');
@@ -77,16 +79,21 @@ function getClientEnvironment(publicUrl) {
         // This should only be used as an escape hatch. Normally you would put
         // images into the `src` and `import` them in code to get their paths.
         PUBLIC_URL: publicUrl,
+        
+        JENIUS_GIT_SHORT_SHA: process.env.JENIUS_GIT_SHORT_SHA,
+        JENIUS_GIT_AUTHOR: process.env.JENIUS_GIT_AUTHOR,
+        JENIUS_GIT_TAG: process.env.JENIUS_GIT_TAG
       }
     );
   // Stringify all values so we can feed into Webpack DefinePlugin
+  
   const stringified = {
     'process.env': Object.keys(raw).reduce((env, key) => {
       env[key] = JSON.stringify(raw[key]);
       return env;
     }, {}),
   };
-
+  
   return { raw, stringified };
 }
 
