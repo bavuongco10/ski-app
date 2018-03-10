@@ -8,7 +8,7 @@
     "build": "make build",
     "test": "node scripts/test.js --env=jsdom",
     "test:coverage": "npm run test -- --coverage ",
-    "analyze": "source-map-explorer build/static/js/main.*",
+    "analyze": "source-map-explorer build/static/js/main.*.js",
     "precommit": "lint-staged",
     "lint": "eslint -- . --cache",
     "lint:fix": "eslint --fix",
