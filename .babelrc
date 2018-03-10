@@ -1,0 +1,16 @@
+{
+  "presets": [
+    "react-app"
+  ],
+  "env": {
+    "production": {
+      "presets": [
+        "react-optimize"
+      ],
+      "plugins": [
+        "transform-remove-console",
+        "closure-elimination"
+      ]
+    }
+  }
+}
