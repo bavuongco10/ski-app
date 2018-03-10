@@ -13,7 +13,7 @@
     "lint": "eslint -- . --cache",
     "lint:fix": "eslint --fix",
     "lint:fix:all": "eslint --fix .",
-    "deploy:github": "gh-pages -b master -d build",
+    "deploy:github": "gh-pages -d build",
     "predeploy:github": "npm run build"
   },
   "dependencies": {
