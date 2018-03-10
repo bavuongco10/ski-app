@@ -1,7 +1,8 @@
 {
-  "name": "cra-demo-1",
+  "name": "mm-test",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
+  "homepage": "http://bavuongco10.github.io/mm-test",
   "scripts": {
     "start": "make start",
     "build": "make build",
