@@ -1,6 +1,6 @@
 {
  "src/**/*.{js,jsx,json,css}": [
-   "prettier --single-quote --write",
+   "npm run lint:fix",
    "git add"
  ]
 }
