@@ -1,7 +1,15 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`renders without crashing 1`] = `
+exports[`BuildInfo component should renders without crashing 1`] = `
 <styled.span>
   SHA: undefined | By: undefined
 </styled.span>
 `;
+
+exports[`BuildInfo component should return build text when not it production 1`] = `
+<styled.span>
+  Sha: 4fdkff | By: Me
+</styled.span>
+`;
+
+exports[`BuildInfo component should return null in production 1`] = `""`;
