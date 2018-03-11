@@ -1,7 +1,13 @@
 import React from 'react';
+import styled from 'styled-components';
 
 import { buildText } from '../../Utils/buildInfo.util';
 import { isProdEnv } from '../../Utils/environment.util';
+
+const Text = styled.span`
+  color: gray;
+  font-size: 10px;
+`;
 
 const BuildInfo = () => {
   // we use 'production' to mean many things, including simply
@@ -10,7 +16,7 @@ const BuildInfo = () => {
   // if we're in prod, don't render:
   if (isProdEnv()) return null;
 
-  return <span>{buildText()}</span>;
+  return <Text>{buildText()}</Text>;
 };
 
 export default BuildInfo;
