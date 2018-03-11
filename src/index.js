@@ -1,14 +1,31 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import { render } from 'react-dom';
+import { Provider } from 'react-redux';
+import { ConnectedRouter } from 'react-router-redux';
+
+import store from './Redux/Store';
+import { history } from './Redux/Middleware';
 
 import './index.css';
 import App from './Containers/App/App.container';
 import registerServiceWorker from './registerServiceWorker';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+const target = document.querySelector('#root');
+
+render(
+  <Provider store={store}>
+    <ConnectedRouter history={history}>
+      <App />
+    </ConnectedRouter>
+  </Provider>,
+  target,
+);
+
 registerServiceWorker();
 
-// Hot Module Replacement API
+/**
+ * Hot Module Replacement API
+ */
 if (module.hot) {
   module.hot.accept();
 }
