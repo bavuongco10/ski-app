@@ -4,6 +4,6 @@
    "stylelint"
  ],
  "src/**/*.css": [
-   "stylelint"
+   "stylelint --config .stylelintrc.css.js"
  ]
 }

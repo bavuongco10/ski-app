@@ -13,7 +13,7 @@
     "lint": "eslint src index.* --ext .js .jsx",
     "lint:fix": "npm run lint -- --fix",
     "lint:style": "npm run lint:styledComponent && npm run lint:css",
-    "lint:css": "stylelint './src/**/*.css' --config .stylelintrc.css.json",
+    "lint:css": "stylelint './src/**/*.css' --config .stylelintrc.css.js",
     "lint:styledComponent": "stylelint './src/**/*.{js,jsx}'",
     "deploy:github": "gh-pages -d build",
     "predeploy:github": "npm run build",
