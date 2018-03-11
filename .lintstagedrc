@@ -1,8 +1,9 @@
 {
  "src/**/*.{js,jsx,json}": [
-   "eslint --fix"
- ],
- "src/**/*.{js,jsx,css}": [
+   "eslint --fix",
    "stylelint"
+ ],
+ "src/**/*.{css}": [
+   "stylelint --config .stylelintrc.css.json"
  ]
 }
