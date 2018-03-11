@@ -1,8 +1,8 @@
 {
  "src/**/*.{js,jsx,json}": [
-   "npm run lint:fix"
+   "eslint --fix"
  ],
  "src/**/*.{js,jsx,css}": [
-   "npm run lint:css"
+   "stylelint"
  ]
 }
