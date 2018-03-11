@@ -5,5 +5,12 @@ exports[`renders without crashing 1`] = `
   className="App"
 >
   <HeaderReact />
+  <main>
+    <Route
+      component={[Function]}
+      exact={true}
+      path="/"
+    />
+  </main>
 </div>
 `;

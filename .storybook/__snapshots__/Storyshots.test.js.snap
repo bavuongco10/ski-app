@@ -4,8 +4,30 @@ exports[`Storyshots BuildInfo production env 1`] = `null`;
 
 exports[`Storyshots BuildInfo test env 1`] = `
 <span
-  className="sc-bdVaJa QnLXI"
+  className="sc-bdVaJa cPtEPl"
 >
   sHa: vkjd392f | By: Bui Thanh Ba Vuong
 </span>
+`;
+
+exports[`Storyshots HeaderReact default 1`] = `
+<header
+  className="App-header sc-bwzfXH hyhUbv"
+>
+  <img
+    alt="logo"
+    className="App-logo sc-bxivhb gVIrut"
+    src="logo.svg"
+  />
+  <h1
+    className="App-title sc-htpNat fuQaVv"
+  >
+    Welcome to React
+  </h1>
+  <span
+    className="sc-bdVaJa cPtEPl"
+  >
+    SHA: undefined | By: undefined
+  </span>
+</header>
 `;
