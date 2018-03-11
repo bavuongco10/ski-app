@@ -68,6 +68,7 @@ module.exports = {
     Exception: true,
     ENV_FILE: false,
     storiesOf: false,
-    document: false
+    document: false,
+    shallow: false
   }
 };

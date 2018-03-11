@@ -17,6 +17,7 @@ exports[`renders without crashing 1`] = `
     >
       Welcome to React
     </h1>
+    <BuildInfo />
   </header>
   <p
     className="App-intro"
