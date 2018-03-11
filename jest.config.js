@@ -1,3 +1,10 @@
+const ignorePatterns = [
+  '<rootDir>/node_modules/',
+  '<rootDir>/src/registerServiceWorker.js',
+  '<rootDir>/src/index.js',
+  '<rootDir>/src/Themes/',
+];
+
 module.exports = {
   name: 'cra-demo-1',
   globals: {
@@ -8,10 +15,12 @@ module.exports = {
   cacheDirectory: '/tmp',
   setupFiles: ['<rootDir>/.tests/Setup.js'],
   snapshotSerializers: ['enzyme-to-json/serializer'],
-  testPathIgnorePatterns: ['<rootDir>/node_modules/'],
+  testPathIgnorePatterns: ignorePatterns,
+  coveragePathIgnorePatterns: ignorePatterns,
   testMatch: [
     '<rootDir>/src/**/__tests__/**/*.{js,jsx,mjs}',
     '<rootDir>/src/**/?(*.)(spec|test).{js,jsx,mjs}',
+    '<rootDir>/.storybook/Storyshots.test.js',
   ],
   transform: {
     '^.+\\.(js|jsx|mjs)$': '<rootDir>/node_modules/babel-jest',

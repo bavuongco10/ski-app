@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots BuildInfo production env 1`] = `null`;
+
+exports[`Storyshots BuildInfo test env 1`] = `
+<span
+  className="sc-bdVaJa QnLXI"
+>
+  sHa: vkjd392f | By: Bui Thanh Ba Vuong
+</span>
+`;
