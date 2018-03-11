@@ -3,7 +3,7 @@
    "eslint --fix",
    "stylelint"
  ],
- "src/**/*.{css}": [
+ "src/**/*.css": [
    "stylelint"
  ]
 }
