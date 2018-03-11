@@ -7,7 +7,7 @@ import { isProdEnv } from '../../Utils/environment.util';
 
 const Text = styled.span`
   color: gray;
-  font-size: 10px;
+  font-size: 0.8em;
 `;
 
 const BuildInfo = ({ isProdEnv, buildText }) => {

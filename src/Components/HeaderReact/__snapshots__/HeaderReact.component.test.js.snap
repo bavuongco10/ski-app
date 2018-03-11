@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`HeaderReact component should renders without crashing 1`] = `
+<styled.header
+  className="App-header"
+>
+  <styled.img
+    alt="logo"
+    className="App-logo"
+    src="logo.svg"
+  />
+  <styled.h1
+    className="App-title"
+  >
+    Welcome to React
+  </styled.h1>
+  <BuildInfo
+    buildText="SHA: undefined | By: undefined"
+    isProdEnv={false}
+  />
+</styled.header>
+`;
