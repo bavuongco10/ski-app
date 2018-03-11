@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  -moz-border-radius: 2em;
 }
 
 .App-logo {
