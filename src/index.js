@@ -7,7 +7,7 @@ import store from './Redux/Store';
 import { history } from './Redux/Middleware';
 
 import './index.css';
-import App from './Containers/App/App.container';
+import Navigation from './Containers/Navigation/Navigation.container';
 import registerServiceWorker from './registerServiceWorker';
 
 const target = document.querySelector('#root');
@@ -15,7 +15,7 @@ const target = document.querySelector('#root');
 render(
   <Provider store={store}>
     <ConnectedRouter history={history}>
-      <App />
+      <Navigation />
     </ConnectedRouter>
   </Provider>,
   target,

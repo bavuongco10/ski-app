@@ -1,15 +1,10 @@
 import React from 'react';
-import { Route } from 'react-router-dom';
 
-import Home from '../Home/Home.container';
-import HeaderReact from '../../Components/HeaderReact/HeaderReact.component';
+import NavBar from '../../Components/NavBar/NavBar.component';
 
 const App = () => (
-  <div className="App">
-    <HeaderReact />
-    <main>
-      <Route exact path="/" component={Home} />
-    </main>
+  <div className="app">
+    <NavBar />
   </div>
 );
 export default App;

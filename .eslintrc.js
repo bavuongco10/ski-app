@@ -53,6 +53,10 @@ module.exports = {
     "arrow-parens": ["error", "as-needed"],
     "no-console": ["warn", { allow: ["warn"] }],  // should have set it to error but to avoid error when reload to it to warn
     "no-shadow": "off",
+    "jsx-a11y/anchor-is-valid": [ "error", {
+      "components": [ "Link" ],
+      "specialLink": [ "to" ]
+    }]
   },
   globals: {
     // Set each global variable name equal to true to allow the variable to be overwritten
